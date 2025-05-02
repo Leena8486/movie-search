@@ -16,7 +16,7 @@ export const Content = () => {
     setSearchTerm("");
     try {
       const response = await axios.get(
-        `http://www.omdbapi.com/?t=${searchTerm}&apiKey=${apiKey}`
+        `https://www.omdbapi.com/?t=${searchTerm}&apiKey=${apiKey}`
       );
       // Check if the response indicates an error, e.g., movie not found:
       if (response.data.Response === "False") {
